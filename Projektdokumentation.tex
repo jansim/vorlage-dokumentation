@@ -1,8 +1,8 @@
 %-----------------------------------------------------------------------------------------
-% Autor dieser Vorlage: Stefan Macke (http://blog.macke.it Twitter: @StefanMacke) 
-% Link zur Vorlage: http://f.macke.it/LaTeXVorlageFIAE 
-%
-% Sämtliche verwendeten Abbildungen, Tabellen und Listings stammen von Dirk Grashorn.
+% Autor dieser Vorlage: Jan Simson
+% Diese Vorlage basiert zum großteil auf der Vorlage von Stefan Macke (http://blog.macke.it Twitter: @StefanMacke)
+% Link zur ursprünglichen Vorlage: http://f.macke.it/LaTeXVorlageFIAE
+% Sämtliche verwendeten Abbildungen, Tabellen und Listings der Ursprungsvorlage stammen von Dirk Grashorn.
 %
 % Lizenz: Creative Commons 3.0 Namensnennung - Weitergabe unter gleichen Bedingungen
 %-----------------------------------------------------------------------------------------
@@ -11,7 +11,7 @@
 	toc=listof, % Abbildungsverzeichnis sowie Tabellenverzeichnis in das Inhaltsverzeichnis aufnehmen
 	toc=bibliography, % Literaturverzeichnis in das Inhaltsverzeichnis aufnehmen
 	footnotes=multiple, % Trennen von direkt aufeinander folgenden Fußnoten
-	parskip=half % vertikalen Abstand zwischen Absätzen verwenden anstatt horizontale Einrückung von Folgeabsätzen           
+	parskip=half % vertikalen Abstand zwischen Absätzen verwenden anstatt horizontale Einrückung von Folgeabsätzen
 ]{scrartcl}
 
 \usepackage[utf8]{inputenc} % muss als erstes eingebunden werden, da Meta/Packages ggfs. Sonderzeichen enthalten
@@ -25,10 +25,6 @@
 \begin{document}
 \input{Deckblatt.tex}
 \clearpage
-
-% kann nach dem Lesen entfernt werden
-\pagenumbering{Alph}
-\input{Vorlage}
 
 % Preface --------------------------------------------------------------------
 \pagenumbering{Roman}
