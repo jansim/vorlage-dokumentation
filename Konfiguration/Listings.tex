@@ -1,7 +1,9 @@
 % zum Einbinden von Programmcode -----------------------------------------------
+\usepackage{courier} % use the font courier
+
 \lstset{
     float=hbp,
-	basicstyle=\footnotesize,
+	basicstyle=\footnotesize\ttfamily,
     identifierstyle=\color{cListingsIdentifier},
     keywordstyle=\color{cListingsKeys},
     stringstyle=\color{cListingsString},
@@ -14,7 +16,8 @@
     showspaces=false,
     showstringspaces=false,
     numbers=left,
-    numberstyle=\tiny,
+    % numberstyle=\tiny,
+    numberstyle=\ttfamily,
     breaklines=true,
     breakautoindent=true,
 	captionpos=b,
