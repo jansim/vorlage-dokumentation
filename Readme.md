@@ -9,3 +9,4 @@ http://f.macke.it/LaTeXVorlageFIAEQuellen
 
 Lizenz:
 Creative Commons 3.0 Namensnennung - Weitergabe unter gleichen Bedingungen
+https://creativecommons.org/licenses/by/3.0/de/
