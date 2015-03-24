@@ -39,18 +39,6 @@
 		do,is,sizeof,while,double,lock,stackalloc,
 		else,long,static,enum,namespace,string},
 }
-\lstdefinelanguage{natural}{
-	sensitive=false,
-	morecomment=[l]{/*},
-	morestring=[b]",
-	morestring=[b]',
-	alsodigit={-,*},
-	morekeywords={
-		DEFINE,DATA,LOCAL,END-DEFINE,WRITE,CALLNAT,PARAMETER,USING,
-		IF,NOT,END-IF,ON,*ERROR-NR,ERROR,END-ERROR,ESCAPE,ROUTINE,
-		PERFORM,SUBROUTINE,END-SUBROUTINE,CONST,END-FOR,END,FOR,RESIZE,
-		ARRAY,TO,BY,VALUE,RESET,COMPRESS,INTO,EQ},
-}
 \lstdefinelanguage{php}{
 	sensitive=false,
 	morecomment=[l]{/*},
@@ -65,4 +53,13 @@
 		private,protected,public,static,switch,throw,try,use,var,while,xor
 		die,echo,empty,exit,eval,include,include_once,isset,list,require,
 		require_once,return,print,unset},
+}
+\lstdefinelanguage{JavaScript}{
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	morestring=[b]',
+	morestring=[b]"
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	ndkeywords={class, export, boolean, throw, implements, import, this},
 }
