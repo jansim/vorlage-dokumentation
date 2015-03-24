@@ -42,6 +42,12 @@
 \input{Tabellen/#1}
 \end{center}}
 
+% Tabellen, die den Zwischenstand nach einer Projektphase verdeutlichen
+% mit Text vorher:
+% \newcommand{\Zwischenstand}[2]{\subsection{Zwischenstand}Tabelle~\ref{tab:#2} zeigt den Zwischenstand nach der #1.\tabelle{Zwischenstand nach der #1}{tab:#2}{#2.tex}}
+% nur Subsection mit Tabelle:
+\newcommand{\Zwischenstand}[2]{\subsection{Zwischenstand}\tabelle{Zwischenstand nach der #1}{tab:#2}{#2.tex}}
+
 % einfaches Wechseln der Schrift, z.B.: \changefont{cmss}{sbc}{n}
 \newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
 
@@ -56,8 +62,6 @@
 \parbox[c][1.1\myy][c]{\myx}{%
 \includegraphics[{#1}]{#2}}%
 }
-
-\definecolor{AOBlau}{rgb}{0, 0.28, 0.56}
 
 % verschiedene Befehle um Wörter semantisch auszuzeichnen ----------------------
 \newcommand{\Index}[2][\empty]{\ifthenelse{\equal{#1}{\empty}}{\index{#2}#2}{\index{#1}#2}}
