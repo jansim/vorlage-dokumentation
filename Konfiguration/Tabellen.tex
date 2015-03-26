@@ -1,0 +1,26 @@
+\usepackage{booktabs}
+
+% Tabellen styling
+\newcommand{\tH}{\emph} % Text Highlight Header z.B. \emph, \textbf, \textit
+\newcommand{\tF}{\emph} % Text Highlight Footer
+
+\newcommand{\tableTop}{\rowcolor{cTableHeading}\toprule}
+\newcommand{\tableBody}{\midrule}
+\newcommand{\tableBottom}{\bottomrule\hline}
+
+
+% fügt Tabellen aus einer TEX-Datei ein
+\newcommand{\tabelle}[3] % Parameter: caption, label, file
+{\begin{table}[htbp]
+\centering
+\singlespacing
+\input{Tabellen/#3}
+\caption{#1}
+\label{#2}
+\end{table}}
+
+\newcommand{\tabelleAnhang}[1] % Parameter: file
+{\begin{center}
+\singlespacing
+\input{Tabellen/#1}
+\end{center}}
