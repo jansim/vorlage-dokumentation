@@ -4,9 +4,11 @@
 \newcommand{\tH}{\emph} % Text Highlight Header z.B. \emph, \textbf, \textit
 \newcommand{\tF}{\emph} % Text Highlight Footer
 
-\newcommand{\tableTop}{\rowcolor{cTableHeading}\toprule}
+\newcommand{\tableHead}{\rowcolor{cTableHeading}\toprule}
 \newcommand{\tableBody}{\midrule}
-\newcommand{\tableBottom}{\bottomrule\hline}
+\newcommand{\tableBodyLine}{\midrule}
+\newcommand{\tableSub}[1]{\rowcolor{cTableHeading}\tableBodyLine#1\tableBodyLine}
+\newcommand{\tableFoot}{\bottomrule\hline}
 
 
 % fügt Tabellen aus einer TEX-Datei ein
