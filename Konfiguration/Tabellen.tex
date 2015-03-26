@@ -1,14 +1,17 @@
-\usepackage{booktabs}
+\usepackage{booktabs} % für modernen Tabellenlook
+
+% Für die Tabellen gibt es extra custom Commands, um bei Bedarf schnell alle Tabellen einfach umzustylen
 
 % Tabellen styling
 \newcommand{\tH}{\emph} % Text Highlight Header z.B. \emph, \textbf, \textit
-\newcommand{\tF}{\emph} % Text Highlight Footer
+\newcommand{\tF}{\emph} % Text Highlighting im Footer
 
-\newcommand{\tableHead}{\rowcolor{cTableHeading}\toprule}
-\newcommand{\tableBody}{\midrule}
-\newcommand{\tableBodyLine}{\midrule}
-\newcommand{\tableSub}[1]{\rowcolor{cTableHeading}\tableBodyLine#1\tableBodyLine}
-\newcommand{\tableFoot}{\bottomrule\hline}
+% Tabellenstrukturierung
+\newcommand{\tableHead}{\rowcolor{cTableHeading}\toprule} % Für die erste Tabellenspalte
+\newcommand{\tableBody}{\midrule} % um den Tabellenkörper zu "initialisieren"
+\newcommand{\tableBodyLine}{\midrule} % um eine horizontale Linie innerhalb der Tabelle anzuzeigen
+\newcommand{\tableSub}[1]{\rowcolor{cTableHeading}\tableBodyLine#1\tableBodyLine} % für Unterbereiche innerhalb der Tabelle
+\newcommand{\tableFoot}{\bottomrule\hline} % Um den Hauptteil der Tabelle abzuschließen
 
 
 % fügt Tabellen aus einer TEX-Datei ein
